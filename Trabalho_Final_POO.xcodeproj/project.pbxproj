@@ -1,0 +1,425 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7056E5482B1786FC007B5079 /* Trabalho_Final_POOApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7056E5472B1786FC007B5079 /* Trabalho_Final_POOApp.swift */; };
+		7056E54E2B1786FD007B5079 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7056E54D2B1786FD007B5079 /* Assets.xcassets */; };
+		7056E5512B1786FD007B5079 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7056E5502B1786FD007B5079 /* Preview Assets.xcassets */; };
+		7056E5592B17873A007B5079 /* Imovel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7056E5582B17873A007B5079 /* Imovel.swift */; };
+		7056E55B2B178945007B5079 /* Casa.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7056E55A2B178945007B5079 /* Casa.swift */; };
+		7056E55D2B17AACB007B5079 /* Apartamento.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7056E55C2B17AACB007B5079 /* Apartamento.swift */; };
+		7056E55F2B17ACD6007B5079 /* Lote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7056E55E2B17ACD6007B5079 /* Lote.swift */; };
+		7056E5622B17B010007B5079 /* CloudKitCRUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7056E5612B17B010007B5079 /* CloudKitCRUD.swift */; };
+		7056E5652B17B445007B5079 /* CRUDModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7056E5642B17B445007B5079 /* CRUDModels.swift */; };
+		7056E5682B17D6D4007B5079 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7056E5672B17D6D4007B5079 /* HomeView.swift */; };
+		706F294C2B17EA0000810D65 /* AddApartamentoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 706F294B2B17EA0000810D65 /* AddApartamentoView.swift */; };
+		706F294E2B1815B900810D65 /* AddCasaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 706F294D2B1815B900810D65 /* AddCasaView.swift */; };
+		706F29502B1817BF00810D65 /* AddLoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 706F294F2B1817BF00810D65 /* AddLoteView.swift */; };
+		706F29522B18BB1800810D65 /* ApartamentoCRUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 706F29512B18BB1800810D65 /* ApartamentoCRUD.swift */; };
+		706F29542B18D38900810D65 /* CasaCRUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 706F29532B18D38900810D65 /* CasaCRUD.swift */; };
+		706F29562B18D4DC00810D65 /* LoteCRUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 706F29552B18D4DC00810D65 /* LoteCRUD.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7056E5442B1786FC007B5079 /* Trabalho_Final_POO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Trabalho_Final_POO.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7056E5472B1786FC007B5079 /* Trabalho_Final_POOApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trabalho_Final_POOApp.swift; sourceTree = "<group>"; };
+		7056E54D2B1786FD007B5079 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7056E5502B1786FD007B5079 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7056E5582B17873A007B5079 /* Imovel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Imovel.swift; sourceTree = "<group>"; };
+		7056E55A2B178945007B5079 /* Casa.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Casa.swift; sourceTree = "<group>"; };
+		7056E55C2B17AACB007B5079 /* Apartamento.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Apartamento.swift; sourceTree = "<group>"; };
+		7056E55E2B17ACD6007B5079 /* Lote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lote.swift; sourceTree = "<group>"; };
+		7056E5612B17B010007B5079 /* CloudKitCRUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitCRUD.swift; sourceTree = "<group>"; };
+		7056E5642B17B445007B5079 /* CRUDModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRUDModels.swift; sourceTree = "<group>"; };
+		7056E5662B17D4AA007B5079 /* Trabalho_Final_POO.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Trabalho_Final_POO.entitlements; sourceTree = "<group>"; };
+		7056E5672B17D6D4007B5079 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		706F294B2B17EA0000810D65 /* AddApartamentoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddApartamentoView.swift; sourceTree = "<group>"; };
+		706F294D2B1815B900810D65 /* AddCasaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCasaView.swift; sourceTree = "<group>"; };
+		706F294F2B1817BF00810D65 /* AddLoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLoteView.swift; sourceTree = "<group>"; };
+		706F29512B18BB1800810D65 /* ApartamentoCRUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApartamentoCRUD.swift; sourceTree = "<group>"; };
+		706F29532B18D38900810D65 /* CasaCRUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CasaCRUD.swift; sourceTree = "<group>"; };
+		706F29552B18D4DC00810D65 /* LoteCRUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoteCRUD.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7056E5412B1786FC007B5079 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7056E53B2B1786FC007B5079 = {
+			isa = PBXGroup;
+			children = (
+				7056E5462B1786FC007B5079 /* Trabalho_Final_POO */,
+				7056E5452B1786FC007B5079 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7056E5452B1786FC007B5079 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7056E5442B1786FC007B5079 /* Trabalho_Final_POO.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7056E5462B1786FC007B5079 /* Trabalho_Final_POO */ = {
+			isa = PBXGroup;
+			children = (
+				7056E5662B17D4AA007B5079 /* Trabalho_Final_POO.entitlements */,
+				7056E5632B17B01C007B5079 /* Views */,
+				7056E5602B17AFEE007B5079 /* Armazenamento */,
+				7056E5572B178714007B5079 /* Classes */,
+				7056E5472B1786FC007B5079 /* Trabalho_Final_POOApp.swift */,
+				7056E54D2B1786FD007B5079 /* Assets.xcassets */,
+				7056E54F2B1786FD007B5079 /* Preview Content */,
+			);
+			path = Trabalho_Final_POO;
+			sourceTree = "<group>";
+		};
+		7056E54F2B1786FD007B5079 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				7056E5502B1786FD007B5079 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7056E5572B178714007B5079 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				7056E5582B17873A007B5079 /* Imovel.swift */,
+				7056E55A2B178945007B5079 /* Casa.swift */,
+				7056E55C2B17AACB007B5079 /* Apartamento.swift */,
+				7056E55E2B17ACD6007B5079 /* Lote.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		7056E5602B17AFEE007B5079 /* Armazenamento */ = {
+			isa = PBXGroup;
+			children = (
+				7056E5612B17B010007B5079 /* CloudKitCRUD.swift */,
+				706F29552B18D4DC00810D65 /* LoteCRUD.swift */,
+				7056E5642B17B445007B5079 /* CRUDModels.swift */,
+				706F29512B18BB1800810D65 /* ApartamentoCRUD.swift */,
+				706F29532B18D38900810D65 /* CasaCRUD.swift */,
+			);
+			path = Armazenamento;
+			sourceTree = "<group>";
+		};
+		7056E5632B17B01C007B5079 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7056E5672B17D6D4007B5079 /* HomeView.swift */,
+				706F294B2B17EA0000810D65 /* AddApartamentoView.swift */,
+				706F294D2B1815B900810D65 /* AddCasaView.swift */,
+				706F294F2B1817BF00810D65 /* AddLoteView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7056E5432B1786FC007B5079 /* Trabalho_Final_POO */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7056E5542B1786FD007B5079 /* Build configuration list for PBXNativeTarget "Trabalho_Final_POO" */;
+			buildPhases = (
+				7056E5402B1786FC007B5079 /* Sources */,
+				7056E5412B1786FC007B5079 /* Frameworks */,
+				7056E5422B1786FC007B5079 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Trabalho_Final_POO;
+			productName = Trabalho_Final_POO;
+			productReference = 7056E5442B1786FC007B5079 /* Trabalho_Final_POO.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7056E53C2B1786FC007B5079 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					7056E5432B1786FC007B5079 = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+				};
+			};
+			buildConfigurationList = 7056E53F2B1786FC007B5079 /* Build configuration list for PBXProject "Trabalho_Final_POO" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7056E53B2B1786FC007B5079;
+			productRefGroup = 7056E5452B1786FC007B5079 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7056E5432B1786FC007B5079 /* Trabalho_Final_POO */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7056E5422B1786FC007B5079 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7056E5512B1786FD007B5079 /* Preview Assets.xcassets in Resources */,
+				7056E54E2B1786FD007B5079 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7056E5402B1786FC007B5079 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7056E55D2B17AACB007B5079 /* Apartamento.swift in Sources */,
+				7056E5622B17B010007B5079 /* CloudKitCRUD.swift in Sources */,
+				706F29522B18BB1800810D65 /* ApartamentoCRUD.swift in Sources */,
+				7056E5682B17D6D4007B5079 /* HomeView.swift in Sources */,
+				7056E55F2B17ACD6007B5079 /* Lote.swift in Sources */,
+				706F294E2B1815B900810D65 /* AddCasaView.swift in Sources */,
+				7056E5652B17B445007B5079 /* CRUDModels.swift in Sources */,
+				7056E55B2B178945007B5079 /* Casa.swift in Sources */,
+				706F29542B18D38900810D65 /* CasaCRUD.swift in Sources */,
+				7056E5482B1786FC007B5079 /* Trabalho_Final_POOApp.swift in Sources */,
+				706F29502B1817BF00810D65 /* AddLoteView.swift in Sources */,
+				706F29562B18D4DC00810D65 /* LoteCRUD.swift in Sources */,
+				7056E5592B17873A007B5079 /* Imovel.swift in Sources */,
+				706F294C2B17EA0000810D65 /* AddApartamentoView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		7056E5522B1786FD007B5079 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7056E5532B1786FD007B5079 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7056E5552B1786FD007B5079 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Trabalho_Final_POO/Trabalho_Final_POO.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Trabalho_Final_POO/Preview Content\"";
+				DEVELOPMENT_TEAM = CU2V2363W7;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "uikittestes.Trabalho-Final-POO";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7056E5562B1786FD007B5079 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Trabalho_Final_POO/Trabalho_Final_POO.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Trabalho_Final_POO/Preview Content\"";
+				DEVELOPMENT_TEAM = CU2V2363W7;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "uikittestes.Trabalho-Final-POO";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7056E53F2B1786FC007B5079 /* Build configuration list for PBXProject "Trabalho_Final_POO" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7056E5522B1786FD007B5079 /* Debug */,
+				7056E5532B1786FD007B5079 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7056E5542B1786FD007B5079 /* Build configuration list for PBXNativeTarget "Trabalho_Final_POO" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7056E5552B1786FD007B5079 /* Debug */,
+				7056E5562B1786FD007B5079 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7056E53C2B1786FC007B5079 /* Project object */;
+}

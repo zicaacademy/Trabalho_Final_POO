@@ -1,0 +1,23 @@
+{
+  "configurations" : [
+    {
+      "id" : "C18DB8BB-D9BE-4820-BAEC-0FA384A20E20",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "codeCoverage" : false,
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:Trabalho_Final_POO.xcodeproj",
+      "identifier" : "7056E5432B1786FC007B5079",
+      "name" : "Trabalho_Final_POO"
+    }
+  },
+  "testTargets" : [
+
+  ],
+  "version" : 1
+}

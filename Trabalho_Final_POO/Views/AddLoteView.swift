@@ -22,39 +22,34 @@ struct AddLoteView: View {
     var body: some View {
         VStack{
             ScrollView{
-                VStack(spacing: 20){
-                    textFieldCep
-                    textFieldEndereco
-                    textFieldNumero
-                    textFieldArea_total
-                    textFieldArea_construida
+                VStack(spacing: 10){
+                    textFieldModel(text: "CEP:", binding: $cep)
+                    enderecoTextField
+                    textFieldModel(text: "Numero:", binding: $numero)
+                    textFieldModel(text: "Area construida:", binding: $area_construida)
+                    textFieldModel(text: "Area total:", binding: $area_total)
                     menuTerreno
-                    textFieldPreco
+                    textFieldModel(text: "Preço", binding: $preco)
                     
+                    
+                    Spacer()
                     saveButton
-                }
+                }.navigationTitle("Adicionar novo Lote").padding()
             }
         }
     }
 }
 extension AddLoteView{
-    private var textFieldEndereco:some View{
-        TextField("endereco", text: $endereco).background(Color(.gray).opacity(0.4)).frame(height: 40).textFieldStyle(RoundedBorderTextFieldStyle()).keyboardType(.numberPad)
-    }
-    private var textFieldNumero:some View{
-        TextField("numero", text: $numero).frame(height: 40).textFieldStyle(RoundedBorderTextFieldStyle()).keyboardType(.numberPad)
-    }
-    private var textFieldCep:some View{
-        TextField("cep", text: $cep).frame(height: 40).textFieldStyle(RoundedBorderTextFieldStyle()).keyboardType(.numberPad)
-    }
-    private var textFieldPreco:some View{
-        TextField("preco", text: $preco).frame(height: 40).textFieldStyle(RoundedBorderTextFieldStyle()).keyboardType(.numberPad)
-    }
-    private var textFieldArea_total:some View{
-        TextField("area_total", text: $area_total).frame(height: 40).textFieldStyle(RoundedBorderTextFieldStyle()).keyboardType(.numberPad)
-    }
-    private var textFieldArea_construida:some View{
-        TextField("area_construida", text: $area_construida).frame(height: 40).textFieldStyle(RoundedBorderTextFieldStyle()).keyboardType(.numberPad)
+    private var enderecoTextField: some View{
+        VStack{
+            HStack{
+                Text("Endereço:").font(.title3)
+                Spacer()
+            }
+            TextField("Endereço:", text: $endereco).frame(height: 40).textFieldStyle(RoundedBorderTextFieldStyle()).keyboardType(.numberPad).foregroundStyle(Color(.gray)).onTapGesture{
+                endereco = ""
+        }
+        }
     }
     private var menuTerreno:some View{
         HStack{

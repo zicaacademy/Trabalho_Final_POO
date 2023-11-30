@@ -14,7 +14,8 @@ struct HomeView: View {
     @State var tipo:Int = 0
     
     var body: some View {
-        NavigationView{
+        NavigationStack{
+            
             VStack{
                 HStack{
                     menuButton
@@ -25,15 +26,15 @@ struct HomeView: View {
                     switch tipo{
                     case 0:
                         listApartamentos
-                    case 2:
+                    case 1:
                         listCasas
-                    case 3:
+                    case 2:
                         listLotes
                     default:
                         Text("erro ao carregar a lista")
                     }
                 }
-            }.navigationTitle("Imoveis disponiveis")
+            }.navigationTitle("Imoveis disponiveis").onAppear(perform: vmApartamento.fetchItems)
         }
     }
 }
@@ -43,12 +44,20 @@ extension HomeView{
         Menu("tipo"){
             Button("apartamentos") {
                 tipo = 0
+                vmApartamento.fetchItems()
+                print(tipo)
+
             }
             Button("casas") {
                 tipo = 1
+                vmCasa.fetchItems()
+                print(tipo)
             }
             Button("lotes") {
                 tipo = 2
+                vmLote.fetchItems()
+                print(tipo)
+
             }
         }.buttonStyle(.plain).padding()
     }
@@ -69,36 +78,57 @@ extension HomeView{
     }
     
     private var listApartamentos:some View{
-        List{
-            ForEach(vmApartamento.apartamento, id: \.self){ imovel in
-                VStack{
-                    Text(imovel.endereco)
-                    Text(imovel.preco.description)
-                }
-            }.onDelete(perform: vmApartamento.deleteItem)
-        }.listStyle(.sidebar)
+        NavigationStack{
+            Section(header: Text("Apartamentos")) {
+                List{
+                    ForEach(vmApartamento.apartamento, id: \.self){ imovel in
+                        VStack{
+                            NavigationLink {
+                                EditApartamentoView(imovel: imovel)
+                            } label: {
+                                ApartamentoView(apartamento: imovel)
+                            }
+                        }
+                    }.onDelete(perform: vmApartamento.deleteItem)
+                }.listStyle(.sidebar)
+            }
+        }.navigationViewStyle(DefaultNavigationViewStyle())
     }
     
     private var listCasas: some View{
-        List{
-            ForEach(vmCasa.casa, id: \.self){ imovel in
-                VStack{
-                    Text(imovel.endereco)
-                    Text(imovel.preco.description)
-                }
-            }.onDelete(perform: vmCasa.deleteItem)
-        }.listStyle(.sidebar)
+        NavigationStack{
+            Section(header: Text("Casas:")) {
+                List{
+                    ForEach(vmCasa.casa, id: \.self){ imovel in
+                        VStack{
+                            NavigationLink {
+                                EditCasaView(imovel: imovel)
+                            } label: {
+                                CasaView(casa: imovel)
+                            }
+                        }
+                    }.onDelete(perform: vmCasa.deleteItem)
+                }.listStyle(.sidebar)
+            }
+        }.navigationViewStyle(DefaultNavigationViewStyle())
     }
     
     private var listLotes:some View{
-        List{
-            ForEach(vmLote.lote, id: \.self){ imovel in
-                VStack{
-                    Text(imovel.endereco)
-                    Text(imovel.preco.description)
-                }
-            }.onDelete(perform: vmLote.deleteItem)
-        }.listStyle(.sidebar)
+        NavigationStack{
+            Section(header: Text("Lotes:")) {
+                List{
+                    ForEach(vmLote.lote, id: \.self){ imovel in
+                        VStack{
+                            NavigationLink {
+                                EditLoteView(imovel: imovel)
+                            } label: {
+                                LoteView(lote: imovel)
+                            }
+                        }
+                    }.onDelete(perform: vmCasa.deleteItem)
+                }.listStyle(.sidebar)
+            }
+        }.navigationViewStyle(DefaultNavigationViewStyle())
     }
 }
 

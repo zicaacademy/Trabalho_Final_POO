@@ -9,6 +9,7 @@ import Foundation
 
 
 class Imovel{
+    var id = UUID()
     private var cep:Int = 0
     private var endereco:String = ""
     private var numero:Int = 0

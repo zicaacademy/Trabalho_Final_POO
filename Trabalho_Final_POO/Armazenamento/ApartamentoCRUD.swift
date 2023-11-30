@@ -74,7 +74,14 @@ class ApartamentoCRUD:CloudKitCRUD{
     }
      func updateItem(apartamento:ApartamentoModel,cep: Int, endereco: String, numero: Int, preco: Double, area_total: Double,num_quartos: Int, andar: Int, num_banheiros: Int){
         let record = apartamento.record
-        record["endereco"] = ""
+        record["endereco"] = endereco
+        record["cep"] = cep
+        record["numero"] = numero
+        record["preco"] = preco
+        record["num_banheiros"] = num_banheiros
+        record["num_quartos"] = num_quartos
+        record["area_total"] = area_total
+        record["andar"] = andar
 
         saveItem(record: record)
     }

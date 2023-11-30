@@ -6,6 +6,14 @@
       "options" : {
 
       }
+    },
+    {
+      "enabled" : false,
+      "id" : "2F07DF89-E9CB-42D0-B85A-7499D1710278",
+      "name" : "Configuration 2",
+      "options" : {
+
+      }
     }
   ],
   "defaultOptions" : {

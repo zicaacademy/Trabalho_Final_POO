@@ -24,48 +24,38 @@ struct AddCasaView: View {
     var body: some View {
         VStack{
             ScrollView{
-                VStack(spacing: 20){
-                    textFieldCep
-                    textFieldEndereco
-                    textFieldNumero
-                    textFieldAndar
-                    textFieldArea_total
-                    textFieldNum_quartos
-                    textFieldNum_banheiros
+                VStack(spacing: 10){
+                    textFieldModel(text: "CEP:", binding: $cep)
+                    enderecoTextField
+                    textFieldModel(text: "Numero:", binding: $numero)
+                    textFieldModel(text: "Numero de andar:", binding: $num_andares)
+                    textFieldModel(text: "Area total:", binding: $area_total)
+                    textFieldModel(text: "Numero de Banheiros:", binding: $num_banheiros)
+
+                    textFieldModel(text: "Numero de quartos:", binding: $num_quartos)
+
+                    textFieldModel(text: "Preço", binding: $preco)
                     toggleGaragem
-                    textFieldPreco
-                    
+                    Spacer()
+
                     saveButton
-                }.navigationTitle("Add nova casa")
+                }.navigationTitle("Add nova casa").padding()
             }
         }
     }
 }
 
 extension AddCasaView{
-    private var textFieldEndereco: some View{
-        TextField("endereco", text: $endereco).frame(height: 40).textFieldStyle(RoundedBorderTextFieldStyle())
-    }
-    private var textFieldNumero: some View{
-        TextField("numero", text: $numero).frame(height: 40).textFieldStyle(RoundedBorderTextFieldStyle()).keyboardType(.numberPad)
-    }
-    private var textFieldCep: some View{
-        TextField("cep", text: $cep).frame(height: 40).textFieldStyle(RoundedBorderTextFieldStyle()).keyboardType(.numberPad)
-    }
-    private var textFieldPreco: some View{
-        TextField("preco", text: $preco).frame(height: 40).textFieldStyle(RoundedBorderTextFieldStyle()).keyboardType(.decimalPad)
-    }
-    private var textFieldArea_total: some View{
-        TextField("area_total", text: $area_total).frame(height: 40).textFieldStyle(RoundedBorderTextFieldStyle()).keyboardType(.decimalPad)
-    }
-    private var textFieldNum_quartos: some View{
-        TextField("num_quartos", text: $num_quartos).frame(height: 40).textFieldStyle(RoundedBorderTextFieldStyle()).keyboardType(.numberPad)
-    }
-    private var textFieldNum_banheiros: some View{
-        TextField("num_banheiros", text: $num_banheiros).frame(height: 40).textFieldStyle(RoundedBorderTextFieldStyle()).keyboardType(.numberPad)
-    }
-    private var textFieldAndar: some View{
-        TextField("num_andares", text: $num_andares).frame(height: 40).textFieldStyle(RoundedBorderTextFieldStyle()).keyboardType(.numberPad)
+    private var enderecoTextField: some View{
+        VStack{
+            HStack{
+                Text("Endereço:").font(.title3)
+                Spacer()
+            }
+            TextField("Endereço:", text: $endereco).frame(height: 40).textFieldStyle(RoundedBorderTextFieldStyle()).keyboardType(.numberPad).foregroundStyle(Color(.gray)).onTapGesture{
+                endereco = ""
+        }
+        }
     }
     private var toggleGaragem: some View{
         Toggle("garagem", isOn: $possui_garagem).toggleStyle(.automatic)

@@ -8,14 +8,14 @@
 import SwiftUI
 
 struct AddApartamentoView: View {
-    @State  var endereco:String = ""
-    @State  var numero:String = ""
-    @State  var cep:String = ""
-    @State  var preco:String = ""
-    @State  var area_total:String = ""
-    @State  var num_quartos:String = ""
-    @State  var num_banheiros:String = ""
-    @State  var andar:String = ""
+    @State  var endereco:String = "Endereco"
+    @State  var numero:String = "Numero"
+    @State  var cep:String = "CEP"
+    @State  var preco:String = "Preço"
+    @State  var area_total:String = "Area total"
+    @State  var num_quartos:String = "Numero de quartos"
+    @State  var num_banheiros:String = "Numero de Banheiros"
+    @State  var andar:String = "Andar"
     
     @State private var apartamento:Apartamento = Apartamento()
     @StateObject private var vm = ApartamentoCRUD()
@@ -24,15 +24,19 @@ struct AddApartamentoView: View {
     var body: some View {
         VStack{
             ScrollView{
-                VStack(spacing: 20){
-                    textFieldCep
-                    textFieldEndereco
-                    textFieldNumero
-                    textFieldAndar
-                    textFieldArea_total
-                    textFieldNum_banheiros
-                    textFieldNum_quartos
-                    textFieldPreco
+                VStack(spacing: 10){
+                    textFieldModel(text: "CEP:", binding: $cep)
+                    enderecoTextField
+                    textFieldModel(text: "Numero:", binding: $numero)
+                    textFieldModel(text: "Andar:", binding: $andar)
+                    textFieldModel(text: "Area total:", binding: $area_total)
+                    textFieldModel(text: "Numero de Banheiros:", binding: $num_banheiros)
+
+                    textFieldModel(text: "Numero de quartos:", binding: $num_quartos)
+
+                    textFieldModel(text: "Preço", binding: $preco)
+                    Spacer()
+
                     saveButton
                 }.ignoresSafeArea().navigationTitle("adicionar novo apartamento").font(.title).foregroundStyle(Color(.white)).padding()
             }
@@ -42,32 +46,17 @@ struct AddApartamentoView: View {
 }
 
 extension AddApartamentoView{
-    
-    private var textFieldEndereco:some View{
-        TextField("endereco", text: $endereco).frame(height: 40).textFieldStyle(RoundedBorderTextFieldStyle())
+    private var enderecoTextField: some View{
+        VStack{
+            HStack{
+                Text("Endereço:").font(.title3)
+                Spacer()
+            }
+            TextField("Endereço:", text: $endereco).frame(height: 40).textFieldStyle(RoundedBorderTextFieldStyle()).keyboardType(.numberPad).foregroundStyle(Color(.gray)).onTapGesture{
+                endereco = ""
+        }
+        }
     }
-    private var textFieldNumero:some View{
-        TextField("numero", text: $numero).frame(height: 40).textFieldStyle(RoundedBorderTextFieldStyle()).keyboardType(.numberPad)
-    }
-    private var textFieldCep:some View{
-        TextField("cep", text: $cep).frame(height: 40).textFieldStyle(RoundedBorderTextFieldStyle()).keyboardType(.numberPad)
-    }
-    private var textFieldPreco:some View{
-        TextField("preco", text: $preco).frame(height: 40).textFieldStyle(RoundedBorderTextFieldStyle()).keyboardType(.decimalPad)
-    }
-    private var textFieldArea_total:some View{
-        TextField("area_total", text: $area_total).frame(height: 40).textFieldStyle(RoundedBorderTextFieldStyle()).keyboardType(.decimalPad)
-    }
-    private var textFieldNum_quartos:some View{
-        TextField("num_quartos", text: $num_quartos).frame(height: 40).textFieldStyle(RoundedBorderTextFieldStyle()).keyboardType(.numberPad)
-    }
-    private var textFieldNum_banheiros:some View{
-        TextField("num_banheiros", text: $num_banheiros).frame(height: 40).textFieldStyle(RoundedBorderTextFieldStyle()).keyboardType(.numberPad)
-    }
-    private var textFieldAndar:some View{
-        TextField("andar", text: $andar).frame(height: 40).textFieldStyle(RoundedBorderTextFieldStyle()).keyboardType(.numberPad)
-    }
-    
     private var saveButton:some View{
         Button(action: {
             apartamento.endereco_get_set = endereco
@@ -97,7 +86,7 @@ extension AddApartamentoView{
             vm.addButtomPressed(cep: apartamento.cep_get_set, endereco: apartamento.endereco_get_set, numero: apartamento.numero_get_set, preco: apartamento.preco_get_set, area_total: apartamento.area_total_get_set, num_quartos: apartamento.num_quartos_get_set, andar: apartamento.andar_get_set, num_banheiros: apartamento.num_banheiros_get_set)
             
         }, label: {
-            Text("Button").foregroundStyle(.white).buttonBorderShape(.roundedRectangle).shadow(radius: 10)
+            Text("Adicionar").foregroundStyle(.white).buttonBorderShape(.roundedRectangle).shadow(radius: 10)
         })
     }
 }

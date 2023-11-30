@@ -23,6 +23,10 @@
 		706F29522B18BB1800810D65 /* ApartamentoCRUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 706F29512B18BB1800810D65 /* ApartamentoCRUD.swift */; };
 		706F29542B18D38900810D65 /* CasaCRUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 706F29532B18D38900810D65 /* CasaCRUD.swift */; };
 		706F29562B18D4DC00810D65 /* LoteCRUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 706F29552B18D4DC00810D65 /* LoteCRUD.swift */; };
+		706F29582B190A2100810D65 /* EditApartamentoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 706F29572B190A2100810D65 /* EditApartamentoView.swift */; };
+		706F295A2B190E2500810D65 /* ViewModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 706F29592B190E2500810D65 /* ViewModels.swift */; };
+		706F295C2B191EDF00810D65 /* EditCasaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 706F295B2B191EDF00810D65 /* EditCasaView.swift */; };
+		706F295E2B1924AF00810D65 /* EditLoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 706F295D2B1924AF00810D65 /* EditLoteView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +48,11 @@
 		706F29512B18BB1800810D65 /* ApartamentoCRUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApartamentoCRUD.swift; sourceTree = "<group>"; };
 		706F29532B18D38900810D65 /* CasaCRUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CasaCRUD.swift; sourceTree = "<group>"; };
 		706F29552B18D4DC00810D65 /* LoteCRUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoteCRUD.swift; sourceTree = "<group>"; };
+		706F29572B190A2100810D65 /* EditApartamentoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditApartamentoView.swift; sourceTree = "<group>"; };
+		706F29592B190E2500810D65 /* ViewModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModels.swift; sourceTree = "<group>"; };
+		706F295B2B191EDF00810D65 /* EditCasaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditCasaView.swift; sourceTree = "<group>"; };
+		706F295D2B1924AF00810D65 /* EditLoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditLoteView.swift; sourceTree = "<group>"; };
+		706F295F2B19350100810D65 /* Trabalho_Final_POO.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = Trabalho_Final_POO.xctestplan; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +69,7 @@
 		7056E53B2B1786FC007B5079 = {
 			isa = PBXGroup;
 			children = (
+				706F295F2B19350100810D65 /* Trabalho_Final_POO.xctestplan */,
 				7056E5462B1786FC007B5079 /* Trabalho_Final_POO */,
 				7056E5452B1786FC007B5079 /* Products */,
 			);
@@ -122,9 +132,13 @@
 			isa = PBXGroup;
 			children = (
 				7056E5672B17D6D4007B5079 /* HomeView.swift */,
+				706F295B2B191EDF00810D65 /* EditCasaView.swift */,
+				706F29592B190E2500810D65 /* ViewModels.swift */,
 				706F294B2B17EA0000810D65 /* AddApartamentoView.swift */,
 				706F294D2B1815B900810D65 /* AddCasaView.swift */,
 				706F294F2B1817BF00810D65 /* AddLoteView.swift */,
+				706F29572B190A2100810D65 /* EditApartamentoView.swift */,
+				706F295D2B1924AF00810D65 /* EditLoteView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -203,11 +217,15 @@
 				7056E5622B17B010007B5079 /* CloudKitCRUD.swift in Sources */,
 				706F29522B18BB1800810D65 /* ApartamentoCRUD.swift in Sources */,
 				7056E5682B17D6D4007B5079 /* HomeView.swift in Sources */,
+				706F295C2B191EDF00810D65 /* EditCasaView.swift in Sources */,
 				7056E55F2B17ACD6007B5079 /* Lote.swift in Sources */,
+				706F29582B190A2100810D65 /* EditApartamentoView.swift in Sources */,
 				706F294E2B1815B900810D65 /* AddCasaView.swift in Sources */,
 				7056E5652B17B445007B5079 /* CRUDModels.swift in Sources */,
 				7056E55B2B178945007B5079 /* Casa.swift in Sources */,
 				706F29542B18D38900810D65 /* CasaCRUD.swift in Sources */,
+				706F295A2B190E2500810D65 /* ViewModels.swift in Sources */,
+				706F295E2B1924AF00810D65 /* EditLoteView.swift in Sources */,
 				7056E5482B1786FC007B5079 /* Trabalho_Final_POOApp.swift in Sources */,
 				706F29502B1817BF00810D65 /* AddLoteView.swift in Sources */,
 				706F29562B18D4DC00810D65 /* LoteCRUD.swift in Sources */,

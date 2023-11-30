@@ -8,6 +8,7 @@
 import Foundation
 
 class Apartamento:Imovel{
+    
     private var num_quartos:Int = 0
     private var num_banheiros:Int = 0
     private var andar:Int = 0

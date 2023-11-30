@@ -75,8 +75,15 @@ class CasaCRUD:CloudKitCRUD{
     }
      func updateItem(casa:CasaModel,cep: Int, endereco: String, numero: Int, preco: Double, area_total: Double,num_quartos: Int, num_andares: Int, num_banheiros: Int, possui_garagem: Bool ){
         let record = casa.record
-        record["endereco"] = ""
-
+        record["endereco"] = endereco
+         record["possui_garagem"] = possui_garagem
+         record["cep"] = cep
+         record["numero"] = numero
+         record["preco"] = preco
+         record["num_banheiros"] = num_banheiros
+         record["num_quartos"] = num_quartos
+         record["area_total"] = area_total
+         record["num_andares"] = num_andares
         saveItem(record: record)
     }
     
